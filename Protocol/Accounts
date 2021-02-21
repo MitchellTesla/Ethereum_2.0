@@ -1,0 +1,18 @@
+There are two types of accounts on Ethereum: 
+
+User Accounts (also known as externally-owned accounts) and contracts. 
+Both types have an ETH balance, may send ETH to any account, may call any public function of a contract or create a 
+new contract, and are identified on the blockchain and in the state by their address.
+
+User accounts are the only type which may create transactions. For a transaction to be valid, it must be signed 
+using the account's private key, a 64-character hexadecimal string that should only be known to the account's owner. 
+The signature algorithm used is ECDSA. Importantly, this algorithm has the property that it allows one to derive
+the signer's address from the signature without knowing the private key.
+
+Contracts are the only type of account which has associated code (a set of functions and variable declarations)
+and contract storage (the values of the variables at any given time). Contracts are passive entities, only able 
+to do anything as a result of an account calling one of its functions. 
+
+During the execution of its code, a contract may: send ETH, alter its storage values, create temporary storage
+(memory) that dies at the end of the function, call any of its own functions, call any public function of a 
+different contract, create a new contract,and query information about the current transaction or the blockchain.
