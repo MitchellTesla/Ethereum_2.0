@@ -1,4 +1,4 @@
-# Ξthereum 2.0  ~MITCHΞLL~
+# Ξthereum 2.0  ~ MITCHΞLL ~
 
 MITCHΞLL's repository for the Ξthereum Virtual Machine and Network
 
