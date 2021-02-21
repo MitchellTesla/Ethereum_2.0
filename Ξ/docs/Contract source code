@@ -1,0 +1,18 @@
+Ethereum's smart contracts are written in high-level programming languages and then compiled down to EVM bytecode and 
+deployed to the Ethereum blockchain. They can be written in Solidity (a language library with similarities to C and JavaScript),
+Serpent (similar to Python, but deprecated), Yul (an intermediate language that can compile to various different backends 
+– EVM 1.0, EVM 1.5 and eWASM are planned), LLL (a low-level Lisp-like language), and Mutan (Go-based, but deprecated). 
+
+There is also a research-oriented language under development called Vyper (a strongly-typed Python-derived decidable language). 
+Source code and compiler information are usually published along with the launch of the contract so that users can see the code 
+and verify that it compiles to the bytecode that is on-chain.
+
+One issue related to using smart contracts on a public blockchain is that bugs, including security holes, are visible to all 
+but cannot be fixed quickly.[57] One example of this is the 2016 attack on The DAO, which could not be quickly stopped or reversed.
+
+There is ongoing research on how to use formal verification to express and prove non-trivial properties. A Microsoft Research report 
+noted that writing solid smart contracts can be extremely difficult in practice, using The DAO hack to illustrate this problem. 
+
+The report discussed tools that Microsoft had developed for verifying contracts, and noted that a large-scale analysis 
+of published contracts is likely to uncover widespread vulnerabilities. The report also stated that it is possible to verify the 
+equivalence of a Solidity program and the EVM code.
