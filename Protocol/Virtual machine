@@ -1,0 +1,12 @@
+Addresses
+Ethereum addresses are composed of the prefix "0x", a common identifier for hexadecimal, concatenated with the rightmost 20 bytes of the Keccak-256 hash of the ECDSA public key (the curve used is the so-called secp256k1). In hexadecimal, 2 digits represent a byte, meaning addresses contain 40 hexadecimal digits, e.g. 0xb794f5ea0ba39494ce839613fffba74279579268. Contract addresses are in the same format, however, they are determined by sender and creation transaction nonce.[47]
+
+Virtual machine
+The Ethereum Virtual Machine (EVM) is the runtime environment for smart contracts in Ethereum. It is a 256-bit register stack designed to run the same code exactly as intended. It is the fundamental consensus mechanism for Ethereum. The formal definition of the EVM is specified in the Ethereum Yellow Paper.[47][48] EVMs have been implemented in C++, C#, Go, Haskell, Java, JavaScript, Python, Ruby, Rust, Elixir, Erlang, and soon WebAssembly.
+
+Gas
+Gas is a unit of account within the EVM used in the calculation of a transaction fee, which is the amount of ETH a transaction's sender must pay to the miner who includes the transaction in the blockchain.
+
+Each type of operation which may be performed by the EVM is hardcoded with a certain gas cost, which is intended to be roughly proportional to the amount of resources (computation and storage) a node must expend to perform that operation. When creating a transaction, the sender must specify a gas limit and gas price. The gas limit is the maximum amount of gas the sender is willing to use in the transaction, and the gas price is the amount of ETH the sender wishes to pay to the miner per unit of gas used. The higher the gas price, the more incentive a miner has to include the transaction in their block, and thus the quicker the transaction will be included in the blockchain. For a transaction to be valid, the sender's starting ETH balance must be greater than or equal to gas limit × gas price. The sender buys the full amount of gas (ie. the gas limit) up-front, at the start of the execution of the transaction, and is refunded at the end for any gas not used. If at any point the transaction does not have enough gas to perform the next operation, the transaction is reverted but the sender still pays for the gas used. Gas prices are typically denominated in Gwei, a subunit of ETH equal to 10-9 ETH.[49]
+
+This fee mechanism is designed to mitigate transaction spam, prevent infinite loops during contract execution, and provide for a market-based allocation of network resources.
