@@ -1,0 +1,147 @@
+file_input: NEWLINE ENDMARKER | module_stmt+ ENDMARKER
+
+module_stmt: import_stmt | type_def | contract_def
+
+########################### import_stmt ##############################
+
+import_stmt: (simple_import | from_import) NEWLINE
+
+simple_import: 'import' (simple_import_name (',' simple_import_name)*)
+simple_import_name: dotted_name ['as' NAME]
+
+from_import: from_import_parent_alt | from_import_sub_alt
+
+from_import_parent_alt: 'from' '.'+ 'import' from_import_names
+from_import_sub_alt: 'from' from_import_sub_path 'import' from_import_names
+
+from_import_sub_path: '.'* dotted_name
+from_import_names: '*' | '(' from_import_names_list ')' | from_import_names_list
+from_import_names_list: from_import_name (',' from_import_name)* [',']
+from_import_name: NAME ['as' NAME]
+
+dotted_name: NAME ('.' NAME)*
+
+########################### type_def #################################
+
+type_def: 'type' NAME '=' type_desc NEWLINE
+
+########################### contract_def #############################
+
+contract_def:
+    'contract' NAME ':' NEWLINE
+    INDENT
+    contract_stmt+
+    DEDENT
+
+contract_stmt: contract_field | event_def | func_def
+
+contract_field: [contract_field_qual] NAME ':' type_desc NEWLINE
+
+event_def:
+    'event' NAME ':' NEWLINE
+    INDENT
+    event_field+
+    DEDENT
+event_field: [event_field_qual] NAME ':' type_desc NEWLINE
+
+func_def:
+    [func_qual] 'def' NAME '(' [arg_list] ')' ['->' base_type] ':' block
+arg_list: arg_def (',' arg_def)* [',']
+arg_def: NAME ':' type_desc
+
+type_desc: map_type | base_type
+map_type:
+    # This is required because of the ambiguous right-shift token
+    'map' '<' base_type ',' 'map' '<' base_type ',' type_desc '>>' |
+    'map' '<' base_type ',' type_desc '>'
+base_type: NAME arr_list
+arr_list: ('[' NUMBER ']')*
+
+contract_field_qual: 'const' | 'pub'
+event_field_qual: 'idx'
+func_qual: 'pub'
+
+########################### func_stmt ###############################
+
+func_stmt:  compound_stmt | simple_stmt
+simple_stmt: small_stmt (';' small_stmt)* [';'] NEWLINE
+
+# NOTE: `vardecl_stmt`, `assign_stmt`, and `augassign_stmt` MUST precede
+# `exprs`.  Otherwise, the parser will get stuck.  However, they must follow
+# all others.  Otherwise, reserved words will match a simple NAME.
+small_stmt: return_stmt | assert_stmt | emit_stmt | pass_stmt | break_stmt |
+            continue_stmt | revert_stmt | vardecl_stmt | assign_stmt | augassign_stmt |
+            exprs
+
+return_stmt: 'return' [exprs]
+assert_stmt: 'assert' expr [',' expr]
+emit_stmt: 'emit' expr
+
+pass_stmt: 'pass'
+break_stmt: 'break'
+continue_stmt: 'continue'
+revert_stmt: 'revert'
+
+vardecl_stmt: target ':' type_desc ['=' expr]
+assign_stmt: (targets '=')+ exprs
+augassign_stmt: target augassign exprs
+
+augassign: '+=' | '-=' | '*=' | '/=' | '%=' | '&=' | '|=' | '^='
+           | '<<=' | '>>=' | '**=' | '//='
+
+compound_stmt: if_stmt | while_stmt | for_stmt
+
+if_stmt: 'if' expr ':' block elif_stmt |
+         'if' expr ':' block [else_block]
+elif_stmt: 'elif' expr ':' block elif_stmt |
+           'elif' expr ':' block [else_block]
+else_block: 'else' ':' block
+
+while_stmt: 'while' expr ':' block [else_block]
+
+for_stmt: 'for' targets 'in' exprs ':' block [else_block]
+
+block: simple_stmt | NEWLINE INDENT func_stmt+ DEDENT
+
+exprs: expr (',' expr)* [',']
+
+expr: disjunct ['if' disjunct 'else' expr]
+disjunct: conjunct ('or' conjunct)*
+conjunct: comparison ('and' comparison)*
+comparison: 'not'* bitwise_or (comp_op bitwise_or)*
+comp_op: '<' | '<=' | '==' | '>=' | '>' | '!=' | ['not'] 'in' | 'is' ['not']
+
+bitwise_or: bitwise_xor ('|' bitwise_xor)*
+bitwise_xor: bitwise_and ('^' bitwise_and)*
+bitwise_and: shift_expr ('&' shift_expr)*
+shift_expr: sum (('<<'|'>>') sum)*
+
+sum: term (('+' term | '-' term))*
+term: factor (('*' factor | '/' factor | '//' factor | '%' factor))*
+factor: ('+' | '-' | '~') factor | power
+power: primary '**' factor | primary
+primary: atom (attr_tail | index_tail | call_tail)*
+
+slices: slice (',' slice)* [',']
+slice: [expr] ':' [expr] [':' [expr]] | expr
+
+atom: list | listcomp | group | tuple | NAME | STRING+ | NUMBER | '...'
+list: '[' [exprs] ']'
+listcomp: '[' expr for_if_clauses ']'
+tuple: '(' [exprs] ')'
+group: '(' expr ')'
+for_if_clauses: ('for' targets 'in' expr ('if' expr)*)+
+
+args: kwargs | expr [',' args]
+kwargs: kwarg (',' kwarg)*
+kwarg: NAME '=' expr
+
+targets: target (',' target)* [',']
+target: atom t_tail+ | t_atom t_tail*
+t_atom: NAME | '(' [targets] ')' | '[' [targets] ']'
+
+t_tail: call_tail* (attr_tail | index_tail)
+
+attr_tail: '.' NAME
+index_tail: '[' slices ']'
+call_tail: '(' [args] ')'
