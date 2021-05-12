@@ -1,0 +1,17 @@
+{
+	"extends": ["tslint-config-prettier"],
+	"rules": {
+		"prettier": true,
+		"indent": [
+			true,
+			"tabs"
+		],
+		"semicolon": [
+			true,
+			"always"
+		],
+		"max-line-length": {
+            "options": [160]
+        }
+	}
+}

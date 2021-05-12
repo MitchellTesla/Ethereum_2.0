@@ -1,0 +1,166 @@
+{
+	"name": "ethereum-remix",
+	"displayName": "Ethereum Remix",
+	"description": "Ethereum Remix plugins in VSCode",
+	"version": "0.0.4",
+	"publisher": "RemixProject",
+	"enableProposedApi": true,
+	"icon": "media/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ethereum/remix-vscode"
+	},
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"keywords": [
+		"ethereum",
+		"Remix"
+	],
+	"activationEvents": [
+		"onView:rmxPlugins",
+		"onCommand:remix.compile"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsWelcome": [
+			{
+				"view": "remix-plugins",
+				"contents": "No remix plugins found [learn more](https://remix.ethereum.org/).\n[Add Plugin](command:rmxPlugins.addEntry)",
+				"when": "view == remix-plugins"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "remix-plugins",
+					"title": "Ethereum Remix",
+					"icon": "media/remix.svg"
+				}
+			]
+		},
+		"views": {
+			"remix-plugins": [
+				{
+					"id": "rmxPlugins",
+					"name": "Plugins",
+					"icon": "media/remix.svg",
+					"contextualTitle": "Remix"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "rmxPlugins.refreshEntry",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				},
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.addEntry",
+				"title": "Add plugin",
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.showPluginOptions",
+				"title": "Options",
+				"icon": {
+					"light": "resources/light/settings.svg",
+					"dark": "resources/dark/settings.svg"
+				},
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.compile.solidity",
+				"title": "Compile with Solidity extension",
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.compile",
+				"title": "Compile with Remix Solidity/YUL compiler",
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.versionSelector",
+				"title": "Remix compiler version selector",
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.optimizerSelector",
+				"title": "Yul optimizer",
+				"category": "Remix"
+			},
+			{
+				"command": "rmxPlugins.languageSelector",
+				"title": "Language selector",
+				"category": "Remix"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "ctrl+alt+c",
+				"command": "rmxPlugins.compile"
+			},
+			{
+				"key": "ctrl+alt+v",
+				"command": "rmxPlugins.versionSelector"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "rmxPlugins.refreshEntry",
+					"when": "view == rmxPlugins",
+					"group": "navigation"
+				},
+				{
+					"command": "rmxPlugins.addEntry",
+					"when": "view == rmxPlugins"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "rmxPlugins.showPluginOptions",
+					"when": "view == rmxPlugins && viewItem == options",
+					"group": "inline"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/mkdirp": "^0.5.2",
+		"@types/node": "^10.12.21",
+		"@types/rimraf": "^2.0.2",
+		"@types/vscode": "^1.47.0",
+		"tslint": "^5.12.1",
+		"typescript": "^3.9.7"
+	},
+	"dependencies": {
+		"@remix-project/remix-url-resolver": "^0.0.18",
+		"@remixproject/engine": "^0.3.13-alpha.1",
+		"@remixproject/engine-vscode": "^0.3.13-alpha.1",
+		"@remixproject/plugin": "^0.3.13-alpha.1",
+		"@remixproject/plugin-api": "^0.3.13-alpha.1",
+		"@remixproject/plugin-utils": "^0.3.13-alpha.1",
+		"@remixproject/plugin-vscode": "^0.3.13-alpha.1",
+		"axios": "^0.21.1",
+		"ftp": "^0.3.10",
+		"jsonc-parser": "^0.4.2",
+		"mkdirp": "^0.5.1",
+		"remix-url-resolver": "^0.0.16",
+		"rimraf": "^2.6.2",
+		"solc": "^0.7.0",
+		"tslint-config-prettier": "^1.18.0"
+	}
+}
