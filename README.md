@@ -1,6 +1,4 @@
 # Ξthereum 2.0 
-# MITCHΞLL's Ξthereum Virtual Machine dev repository.
-
 Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 
 # Check 'Projects' for more detailed information on the ETH 2.0 protocol.
@@ -29,3 +27,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+# MITCHΞLL's Ξthereum Virtual Machine developer portal.
