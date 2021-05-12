@@ -2,7 +2,7 @@
 Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 
 # Check 'Projects' for more detailed information on the ETH 2.0 protocol.
-(reference: DevLab3 repo for libraries of Solidity smart-contracts and reference guides) 
+(Reference: DevLab3 repo for libraries of Solidity smart-contracts and reference guides) 
 
 This repository is in the early days of construction for the Eth 2.0 upgrade.
 
@@ -28,4 +28,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-# MITCHΞLL's Ξthereum Virtual Machine developer portal.
+# Ξthereum Virtual Machine developer portal.
