@@ -1,0 +1,100 @@
+.PHONY: build-website
+build-website:
+	echo -e "\033[0;32mBuilding website...\033[0m"
+
+	# Ensure we start from a clean state
+	rm -rf target/website
+
+	# Copy the entire website directory to target/website
+	cp -r website/ target/
+
+	# Generate the compiler API docs
+	cargo doc --no-deps --workspace
+
+	# Move the API docs into the compiler-docs subdirectory within the website
+	mv target/doc target/website/compiler-docs
+
+	# Generate the Fe guide into the docs subdirectory within the website
+	cd docs; mdbook build -d ../target/website/docs
+
+.PHONY: serve-website
+serve-website: build-website
+		echo -e "\033[0;32mServing website locally...\033[0m"
+		cd target/website; python3 -m http.server 8000
+
+.PHONY: deploy-website
+deploy-website: build-website
+		echo -e "\033[0;32mDeploying website...\033[0m"
+		# delete old gh-pages-tmp + gh-pages-dist branch if they exists
+		-git branch -D gh-pages-tmp gh-pages-dist
+
+		# Recreate it
+		git checkout -b gh-pages-tmp
+
+		# Add changes to git.
+		git add -f target/website
+
+		# Commit changes.
+		git commit -m "Generated website"
+
+		# Only preserve target/website as the root of contents for this branch
+		git subtree split -P target/website -b gh-pages-dist
+
+		# Push to Github Pages
+		git push -f upstream gh-pages-dist:gh-pages
+
+		# Go where we came from
+		git checkout -
+
+		# Delete temporary branches
+		git branch -D gh-pages-tmp
+		git branch -D gh-pages-dist
+
+.PHONY: docker-test
+docker-test:
+	docker run \
+		--rm \
+		--volume "$(shell pwd):/mnt" \
+		--workdir '/mnt' \
+		rustlang/rust:nightly \
+		cargo test --workspace
+
+.PHONY: docker-wasm-test
+docker-wasm-test:
+	docker run \
+		--rm \
+		--volume "$(shell pwd):/mnt" \
+		--workdir '/mnt' \
+		davesque/rust-wasm \
+		wasm-pack test --node -- --workspace
+
+.PHONY: coverage
+coverage:
+	cargo tarpaulin --workspace --all-features --verbose --timeout 120 --exclude-files 'tests/*' --exclude-files 'main.rs' --out xml html
+
+.PHONY: clippy
+clippy:
+	cargo clippy --all-targets --all-features -- -D warnings -A clippy::upper-case-acronyms
+
+.PHONY: rustfmt
+rustfmt:
+	cargo fmt --all -- --check
+
+.PHONY: lint
+lint: rustfmt clippy
+
+.PHONY: build-docs
+build-docs:
+	cargo doc --no-deps --workspace
+
+README.md: src/main.rs
+	cargo readme --no-title --no-indent-headings > README.md
+
+notes:
+	towncrier --yes --version $(version)
+	git commit -m "Compile release notes"
+
+release:
+	# Ensure release notes where generated before running the release command
+	./newsfragments/validate_files.py is-empty
+	cargo release $(version) --all
