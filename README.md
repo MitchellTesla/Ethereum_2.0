@@ -4,7 +4,7 @@ Ethereum is the permissionless, non-hierarchical network of computers (nodes) wh
   <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
 
-Notice: The repository is under construction and updates frequently.
+Notice: (WIP) The repository is under construction and updates frequently.
 
 # Ξthereum Virtual-Machine Developer Portal
 
