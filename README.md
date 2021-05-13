@@ -8,7 +8,7 @@ Notice: The repository is under construction and updates frequently.
 
 # Ξthereum Virtual-Machine Developer Portal
 
-Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
+Reference: DevLab3 repo for more libraries on Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the ETH 2.0 protocol.
 
