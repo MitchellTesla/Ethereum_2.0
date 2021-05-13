@@ -4,9 +4,10 @@ This repository is in the early days of construction and updates frequently.
 <p align="center">
   <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
+# Ξthereum Virtual-Machine Developer Portal
+Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the ETH 2.0 protocol.
-Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference docs.
 
 # MIT License
 
@@ -29,5 +30,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-# Ξthereum Virtual Machine developer portal.
