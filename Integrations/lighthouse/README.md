@@ -1,6 +1,6 @@
-# Lighthouse: Ethereum 2.0
+# Lighthouse: Ethereum 2.0 integration testing
 
-An open-source Ethereum 2.0 client, written in Rust and maintained by Sigma Prime.
+An open-source Ethereum 2.0 client, written in Rust and maintained by Sigma Prime. 
 
 [![Build Status]][Build Link] [![Book Status]][Book Link] [![Chat Badge]][Chat Link]
 
