@@ -6,6 +6,7 @@ Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platfo
 
 **Before you initiate a pull request**, please read the [EIP-1](https://eips.ethereum.org/EIPS/eip-1) process document. Ideas should be thoroughly discussed prior to opening a pull request, such as on the [Ethereum Magicians forums](https://ethereum-magicians.org) or in a GitHub issue in this repository.
 
+
 This repository tracks the ongoing status of EIPs. It contains:
 
 - [Draft](https://eips.ethereum.org/all#draft) proposals which intend to complete the EIP review process.
