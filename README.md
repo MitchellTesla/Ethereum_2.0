@@ -6,7 +6,7 @@ This repository is in the early days of construction for the Eth 2.0 upgrade.
 </p>
 
 # Check 'Projects' for more information on the ETH 2.0 protocol.
-Reference: DevLab3 repo for libraries of Solidity smart-contracts and reference guides
+Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference docs.
 
 # MIT License
 
