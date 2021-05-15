@@ -5,7 +5,7 @@ Ethereum is the permissionless, non-hierarchical network of computers (nodes) wh
 </p>
 Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
-# Check 'Projects' for more information on the ETH 2.0 protocol.
+# Check 'Projects' for more information on the Ξthereum 2.0 and the virtual-machine.
 Notice: (WIP) This repository is under construction for ETH2.0 and updates frequently.
   
 # MIT License
