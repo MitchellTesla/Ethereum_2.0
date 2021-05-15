@@ -1,8 +1,8 @@
 # Ξthereum 2.0 
-Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 <p align="center">
   <img src="2021-ethereum2logo-mitchtesla.png" alt="demo" />
 </p>
+Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 
 Notice: (WIP) The repository is under construction and updates frequently.
 
