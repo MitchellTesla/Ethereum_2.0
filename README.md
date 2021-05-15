@@ -1,15 +1,14 @@
 # Ξthereum Virtual-Machine Developer Portal
 Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 <p align="center">
-  <img src="2021-ethereum2logo-mitchtesla.png" alt="demo" />
+  <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
-
 Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the ETH 2.0 protocol.
 Notice: (WIP) The repository is under construction and updates frequently.
 <p align="center">
-  <img src="MTeslaEthereumlogo.png" alt="demo" />
+  <img src="2021-ethereum2logo-mitchtesla.png" alt="demo" />
 </p>
 # MIT License
 
