@@ -1,5 +1,5 @@
 # Ξthereum Virtual-Machine Developer Portal
-Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
+Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 <p align="center">
   <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
