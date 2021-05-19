@@ -1,5 +1,5 @@
 # Ξthereum Virtual-Machine Developer Portal
-[![CodeQL](https://github.com/MitchellTesla/go-ethereum-aura/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/go-ethereum-aura/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
 
 Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 <p align="center">
