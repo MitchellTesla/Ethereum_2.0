@@ -1,16 +1,14 @@
-# Ξthereum 2.0 
-Ethereum is the permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
-This repository is in the early days of construction and updates frequently.
+# Ξthereum Virtual-Machine Developer Portal
+[![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
+ 
 <p align="center">
   <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
+Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
-# Ξthereum Virtual-Machine Developer Portal
-
-Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
-
-# Check 'Projects' for more information on the ETH 2.0 protocol.
-
+# Check 'Projects' for more information on the Ξthereum 2.0 
+Notice: (WIP) This repository is under construction for ETH2.0 and updates frequently.
+  
 # MIT License
 
 Copyright (c) 2021 Justin Mitchell
@@ -32,3 +30,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+<p align="center">
+  <img src="2021-ethereum2logo-mitchtesla.png" alt="demo" />
+</p>
