@@ -1,4 +1,4 @@
-# Ξthereum Virtual-Machine Developer Portal
+# Ξthereum Virtual-Machine xDeveloper Portal
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
  
 <p align="center">
