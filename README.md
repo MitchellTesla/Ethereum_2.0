@@ -10,6 +10,10 @@ Ethereum is a permissionless, non-hierarchical network of computers (nodes) whic
 # Check 'Projects' for more information on the Ξthereum 2.0 
 Notice: (WIP) This repository is under construction for ETH2.0 and updates frequently.
   
+  <p align="center">
+  <img src="MTeslaEthereumlogo.png" alt="demo" />
+</p>
+  
 # MIT License
 
 Copyright (c) 2021 Justin Mitchell
@@ -32,10 +36,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-<p align="center">
-  <img src="MTeslaEthereumlogo.png" alt="demo" />
-</p>
 
 #   Copyright (c) 2021 MitchellTesla 
 
