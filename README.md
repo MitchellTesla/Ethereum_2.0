@@ -1,4 +1,4 @@
-# Ξthereum Virtual-Machine Developer Portal
+# Ξthereum 2.0 Virtual-Machine
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
  
 <p align="center">
@@ -12,6 +12,7 @@ Notice: (WIP) This repository is under construction for ETH2.0 and updates frequ
 # MIT License
 
 Copyright (c) 2021 Justin Mitchell
+Copyright (c) 2021 dedsec-9
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -34,7 +35,7 @@ SOFTWARE.
   <img src="2021-ethereum2logo-mitchtesla.png" alt="demo" />
 </p>
 
-#  
+#   Copyright (c) 2021 MitchellTesla 
 
 <p align="center">
   <img src="dedsec9isnotsoanon.jpg" alt="demo" />
