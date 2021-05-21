@@ -1,10 +1,6 @@
 # Ξthereum 2.0 Virtual-Machine (WIP)
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
 
- <p align="center">
-  <img src="Ethereum-Code.jpeg" alt="demo" />
-</p>
-
 Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the Ξthereum 2.0 
