@@ -1,9 +1,10 @@
 # Ξthereum 2.0 Virtual-Machine (WIP)
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
- 
-<p align="center">
-  <img src="MTeslaEthereumlogo.png" alt="demo" />
+
+ <p align="center">
+  <img src="Ethereum-Code.jpeg" alt="demo" />
 </p>
+
 Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the Ξthereum 2.0 
@@ -31,8 +32,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 <p align="center">
-  <img src="2021-ethereum2logo-mitchtesla.png" alt="demo" />
+  <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
 
 #   Copyright (c) 2021 MitchellTesla 
