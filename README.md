@@ -1,4 +1,4 @@
-# Ξthereum 2.0 Virtual-Machine
+# Ξthereum 2.0 Virtual-Machine (WIP)
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
  
 <p align="center">
