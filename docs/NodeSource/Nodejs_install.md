@@ -464,10 +464,13 @@ sudo snap install node --classic --channel=edge
 Due to their auto-updating nature, snaps are not necessarily appropriate for the deployment of your Node.js applications to production. NodeSource recommends a stable and integration-tested deployment pipeline for production applications such as the .deb or .rpm distributions outlined above. However, snaps are an excellent way to keep developer machines updated and allow for trivial and convenient switching between Node.js versions.
 
 # Advanced usage
+                                    
 The snap man page, or Canonical’s advanced snap usage tutorial contains details of advanced snapd functionality.
 
 # Test (install)
-To test an installation is working (and that the setup scripts are working!) use:
+                                    
+To test if an installation is working (and that the setup scripts are working!) use:
+                                    
 curl -fsSL https://deb.nodesource.com/test | bash -
 
 
