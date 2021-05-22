@@ -10,29 +10,29 @@ Pull requests are encouraged if you have changes you believe would improve the s
 #  Table of Contents
 Debian and Ubuntu based distributions (deb)
 
-Installation instructions
+- Installation instructions
 
-Manual installation
+- Manual installation
 
-Enterprise Linux based distributions (rpm)
+- Enterprise Linux based distributions (rpm)
 
-Installation instructions
+- Installation instructions 'terminal'
 
-Snap packages
+- Snap packages
 
-About
+- About
 
-Installation instructions
+- Installation instructions
 
-Advanced usage
+- Advanced usage
 
-Tests
+- Tests 
 
-FAQ
+- FAQ
 
-Requested Distributions
+- Requested Distributions
 
-License
+- License
 
 #  Debian and Ubuntu based distributions
  
