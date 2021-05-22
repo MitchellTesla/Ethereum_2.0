@@ -8,7 +8,8 @@ Please file an issue if you are experiencing a problem or would like to discuss 
 Pull requests are encouraged if you have changes you believe would improve the setup process or increase compatibility across Linux distributions.
 
 #  Table of Contents
-Debian and Ubuntu based distributions (deb)
+
+- Debian and Ubuntu based distributions (deb)
 
 - Installation instructions
 
@@ -16,7 +17,7 @@ Debian and Ubuntu based distributions (deb)
 
 - Enterprise Linux based distributions (rpm)
 
-- Installation instructions 'terminal'
+- Installation instructions
 
 - Snap packages
 
