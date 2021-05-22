@@ -4,7 +4,9 @@
 <p align="center">
   <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
-  
+ 
+This repository is under research and development, and should not be treated as Production-Ready**
+ 
 Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the Ξthereum 2.0 
