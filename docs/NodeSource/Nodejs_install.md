@@ -39,147 +39,231 @@ License
  
 Available architectures:
 NodeSource will continue to maintain the following architectures and may add additional ones in the future.
+
 amd64 (64-bit)
+
 armhf (ARM 32-bit hard-float, ARMv7 and up: arm-linux-gnueabihf)
+
 arm64 (ARM 64-bit, ARMv8 and up: aarch64-linux-gnu)
 
 # Supported Ubuntu versions:
+
 NodeSource will maintain Ubuntu distributions in active support by Canonical, including LTS and the intermediate releases.
+
 Ubuntu 16.04 LTS (Xenial Xerus)
+
 Ubuntu 18.04 LTS (Bionic Beaver)
+
 Ubuntu 18.10 (Cosmic Cuttlefish)
+
 Ubuntu 19.04 (Disco Dingo)
+
 Ubuntu 19.10 (Eoan Ermine)
+
 Ubuntu 20.04 LTS (Focal Fossa)
+
 Ubuntu 20.10 (Groovy Gorilla)
+
 Ubuntu 21.04 (Hirsute Hippo)
 
 # Supported Debian versions:
 NodeSource will maintain support for stable, testing and unstable releases of Debian, due to the long release cycle a considerable number of users are running unstable and testing.
+
 Debian 9 / oldstable (Stretch)
+
 Debian 10 / stable (Buster)
+
 Debian unstable (Sid)
+
 Debian testing (Bullseye)
 
 # Supported Linux Mint versions:
 Linux Mint 18 "Sarah" (via Ubuntu 16.04 LTS)
+
 Linux Mint 18.1 "Serena" (via Ubuntu 16.04 LTS)
+
 Linux Mint 18.2 "Sonya" (via Ubuntu 16.04 LTS)
+
 Linux Mint 18.3 "Sylvia" (via Ubuntu 16.04 LTS)
+
 Linux Mint Debian Edition (LMDE) 2 "Betsy" (via Debian 8)
+
 Linux Mint 19 "Tara" (via Ubuntu 18.04 LTS)
+
 Linux Mint 19.1 "Tessa" (via Ubuntu 18.04 LTS)
+
 Linux Mint 19.2 "Tina" (via Ubuntu 18.04 LTS)
+
 Linux Mint 19.3 "Tricia" (via Ubuntu 18.04 LTS)
+
 Linux Mint 20 "Ulyana" (via Ubuntu 20.04 LTS)
+
 Linux Mint 20.1 "Ulyssa" (via Ubuntu 20.04 LTS)
+
 Linux Mint Debian Edition (LMDE) 3 "Cindy" (via Debian 9)
+
 Linux Mint Debian Edition (LMDE) 4 "Debbie" (via Debian 10)
 
 # Supported Devuan versions:
+
 Ascii / stable (via Debian 9)
+
 Beowulf / testing (via Debian 10)
+
 Ceres / unstable (via Debian unstable)
 
 # Supported elementary OS versions:
+
 elementary OS 0.4 Loki (via Ubuntu 16.04 LTS)
+
 elementary OS 5 Juno (via Ubuntu 18.04 LTS)
+
 elementary OS 5.1 Hera (via Ubuntu 18.04 LTS)
+
 elementary OS 6 Odin (via Ubuntu 20.04 LTS)
+
 
 # Supported Trisquel versions:
 Trisquel 8 "Flidas" (via Ubuntu 16.04 LTS)
+
 Trisquel 9 "Etiona" (via Ubuntu 18.04 LTS)
 
 # Supported BOSS versions:
+
 BOSS 7.0 "Drishti" (via Debian 9)
+
 BOSS 8.0 "Unnati" (via Debian 10)
-Supported BunsenLabs versions:
+
+# Supported BunsenLabs versions:
+
 Helium (via Debian 9)
 Lithium (via Debian 10)
 
+
 # Supported MX Linux versions:
+
 MX-17 Horizon (via Debian 9)
+
 MX-18 Continuum (via Debian 9)
+
 MX-19 Patito Feo (via Debian 10)
 
 # Supported Sparky Linux versions:
+
 Sparky 4.x "Tyche" (via Debian 9)
+
 Sparky 5.x "Nibiru" (via Debian 10)
 
 # Supported PureOS Linux versions:
+
 PureOS 9.0 "Amber" (via Debian 10)
 
 # Supported Astra Linux CE versions:
+
 Astra Linux CE 2.12 "Orel" (via Debian 9)
 
 # Supported Ubilinux versions:
+
 Ubilinux 4.0 "Dolcetto" (via Debian 9)
 
 
 #  Installation instructions
 
 # Node.js v16.x:
+
 Using Ubuntu
+
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Using Debian, as root
+
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+
 apt-get install -y nodejs
 
 # Node.js v15.x:
+
 Using Ubuntu
+
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Using Debian, as root
+
 curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
+
 apt-get install -y nodejs
 
 # Node.js v14.x:
+
 Using Ubuntu
+
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Using Debian, as root
+
 curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+
 apt-get install -y nodejs
 
 # Node.js v12.x:
+
 Using Ubuntu
+
 curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Using Debian, as root
+
 curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
+
 apt-get install -y nodejs
 
 # Node.js LTS (v14.x):
+
 Using Ubuntu
+
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Using Debian, as root
+
 curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
+
 apt-get install -y nodejs
 
 # Node.js Current (v16.x):
+
 Using Ubuntu
+
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Using Debian, as root
+
 curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
+
 apt-get install -y nodejs
 
 #  Optional: install build tools
+
 To compile and install native addons from npm you may also need to install build tools:
-# use `sudo` on Ubuntu or run this as root on debian
+
+use `sudo` on Ubuntu or run this as root on debian
+
 apt-get install -y build-essential
 
 
 #  Manual installation
+
 If you're not a fan of curl <url> | bash -, or are using an unsupported distribution, you can try a manual installation.
 
 These instructions assume sudo is present, however some distributions do not include this command by default, particularly those focused on a minimal environment. In this case, you should install sudo or su to root to run the commands directly.
