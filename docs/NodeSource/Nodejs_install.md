@@ -359,51 +359,70 @@ The Nodesource RPM package signing key is available here: https://rpm.nodesource
 # Run on RHEL, CentOS, CloudLinux, Amazon Linux or Fedora:
 
 # Node.js v16.x
+                                    
 As root
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_16.x | bash -
 
 No root privileges
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
 
 # Node.js v15.x
+                                    
 As root
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_15.x | bash -
 
 No root privileges
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_15.x | sudo bash -
 
 # Node.js v14.x
+                                    
  As root
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_14.x | bash -
 
 No root privileges
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_14.x | sudo bash -
                                     
 # Node.js v12.x
+                                    
 As root
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_12.x | bash -
 
 No root privileges
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_12.x | sudo bash -
                                     
 # Node.js LTS (14.x)
+                                    
 As root
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
 
 No root privileges
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | sudo bash -
                                     
 # Node.js Current (16.x)
+                                    
 As root
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_current.x | bash -
 
 No root privileges
+                                    
 curl -fsSL https://rpm.nodesource.com/setup_current.x | sudo bash -
                                     
                                     
 # Optional: install build tools
                                     
 To compile and install native addons from npm you may also need to install build tools:
+                                    
 yum install gcc-c++ make
  or: yum groupinstall 'Development Tools'
  
