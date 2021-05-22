@@ -562,13 +562,21 @@ NotABug/jorgesumle
 
 
 Mayank Metha
+
 GitHub/mayankmetha
+
 Twitter/@mayankmethad
+
 Adrian Estrada
+
 GitHub/edsadr
+
 Twitter/@edsadr
+
 Iván Iguarán
+
 GitHub/igsu
+
 Github/mitchelltesla
 
 Contributions are welcomed from anyone wanting to improve this project!
