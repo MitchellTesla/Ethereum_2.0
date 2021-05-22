@@ -1,4 +1,4 @@
-This repository is a copy of Nodejs/NodeSource Installation documentation distributed and utilized by @mitchell_tesla in 2021 
+This repository is a distributed copy of Nodejs/NodeSource Installation documentation utilized by @mitchell_tesla
 
 for using the NodeSource Node.js Binary Distributions via .rpm, .deb and Snap packages as well as their setup and support scripts.
 
