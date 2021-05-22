@@ -204,7 +204,7 @@ curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-# Using Debian, as root
+Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 
@@ -218,7 +218,7 @@ curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-# Using Debian, as root
+Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 
@@ -232,7 +232,7 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-# Using Debian, as root
+Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 
@@ -246,7 +246,7 @@ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-# Using Debian, as root
+Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
 
@@ -361,7 +361,7 @@ The Nodesource RPM package signing key is available here: https://rpm.nodesource
 As root
 curl -fsSL https://rpm.nodesource.com/setup_16.x | bash -
 
-# No root privileges
+No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
 
 # Node.js v15.x
@@ -378,8 +378,8 @@ curl -fsSL https://rpm.nodesource.com/setup_14.x | bash -
 No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_14.x | sudo bash -
                                     
-Node.js v12.x
-# As root
+# Node.js v12.x
+As root
 curl -fsSL https://rpm.nodesource.com/setup_12.x | bash -
 
 No root privileges
@@ -404,7 +404,7 @@ curl -fsSL https://rpm.nodesource.com/setup_current.x | sudo bash -
                                     
 To compile and install native addons from npm you may also need to install build tools:
 yum install gcc-c++ make
-# or: yum groupinstall 'Development Tools'
+ or: yum groupinstall 'Development Tools'
  
 #  Snap packages
 
@@ -446,7 +446,7 @@ Due to their auto-updating nature, snaps are not necessarily appropriate for the
 # Advanced usage
 The snap man page, or Canonical’s advanced snap usage tutorial contains details of advanced snapd functionality.
 
-# Tests
+# Test (install)
 To test an installation is working (and that the setup scripts are working!) use:
 curl -fsSL https://deb.nodesource.com/test | bash -
 
