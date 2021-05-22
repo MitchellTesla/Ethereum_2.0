@@ -166,7 +166,7 @@ Astra Linux CE 2.12 "Orel" (via Debian 9)
 Ubilinux 4.0 "Dolcetto" (via Debian 9)
 
 
-#  Installation instructions
+#  Installation instructions * (terminal)
 
 # Node.js v16.x:
 
@@ -204,7 +204,7 @@ curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-Using Debian, as root
+# Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 
@@ -218,7 +218,7 @@ curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-Using Debian, as root
+# Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 
@@ -232,7 +232,7 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-Using Debian, as root
+# Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 
@@ -246,7 +246,7 @@ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-Using Debian, as root
+# Using Debian, as root
 
 curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
 
