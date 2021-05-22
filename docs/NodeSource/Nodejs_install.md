@@ -265,31 +265,35 @@ apt-get install -y build-essential
 
 If you're not a fan of curl <url> | bash -, or are using an unsupported distribution, you can try a manual installation.
 
-These instructions assume sudo is present, however some distributions do not include this command by default, particularly those focused on a minimal environment. In this case, you should install sudo or su to root to run the commands directly.
+These instructions assume 'sudo' is present, however some distributions do not include this command by default, particularly those focused on a minimal environment. In this case, you should install sudo or su to root to run the commands directly.
 
 1. Remove the old PPA if it exists
+ 
 This step is only required if you previously used Chris Lea's Node.js PPA.
  
-# add-apt-repository may not be present on some Ubuntu releases:
-# sudo apt-get install python-software-properties
+- add-apt-repository may not be present on some Ubuntu releases:
+- sudo apt-get install python-software-properties
 sudo add-apt-repository -y -r ppa:chris-lea/node.js
 sudo rm -f /etc/apt/sources.list.d/chris-lea-node_js-*.list
 sudo rm -f /etc/apt/sources.list.d/chris-lea-node_js-*.list.save
 
 2. Add the NodeSource package signing key
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
-# wget can also be used:
-# wget --quiet -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
-The key ID is 1655A0AB68576280.
+- wget can also be used:
+- wget --quiet -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
+
+ The key ID is 1655A0AB68576280.
 
 3. Add the desired NodeSource repository
  Replace with the branch of Node.js or io.js you want to install: node_6.x, node_8.x, etc...
 VERSION=node_8.x
+ 
  The below command will set this correctly, but if lsb_release isn't available, you can set it manually:
  - For Debian distributions: jessie, sid, etc...
  - For Ubuntu distributions: xenial, bionic, etc...
  - For Debian or Ubuntu derived distributions your best option is to use the codename corresponding to the upstream release your distribution is based off. This is an advanced scenario and unsupported if your distribution is not listed as supported per earlier in this README.
 DISTRO="$(lsb_release -s -c)"
+ 
 echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /etc/apt/sources.list.d/nodesource.list
 
@@ -297,7 +301,7 @@ echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /e
 sudo apt-get update
 sudo apt-get install nodejs
 
- # Enterprise Linux based distributions
+# Enterprise Linux based distributions
 
 #  Available architectures:
 
@@ -345,8 +349,9 @@ Amazon Linux 2 (64-bit)
 
 #  Installation instructions
                                     
-# NOTE: 
- If you are using RHEL 6 or CentOS 6, you might want to read about running Node.js on older distros.
+# NOTICE: 
+ 
+If you are using RHEL 6 or CentOS 6, you might want to read about running Node.js on older distros.
                                     
 The Nodesource RPM package signing key is available here: https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL
 
@@ -405,29 +410,37 @@ yum install gcc-c++ make
 
 # About
 Snaps are containerized software packages designed to work across cloud, desktop, and IoT devices. They work natively on most popular Linux distributions and feature automatic transactional updates.
+                                    
 The NodeSource-managed Node.js snap contains the Node.js runtime, along with the two most widely-used package managers, npm and Yarn. They are delivered from the snapcraft store and are automatically built and pushed for each supported Node.js release line. Generally you will have a new version of Node.js automatically running on your computer the same day it is released on nodejs.org.
+
 The Node.js snap can currently be installed on Arch Linux, Debian, Fedora, Linux Mint, Manjaro, OpenEmbedded/Yocto, OpernWrt, Solus, Ubuntu and many other distributions built on top these. NodeSource has not tested the Node.js snap on all of these distributions and feedback is welcome in this repository if you run into problems.
 
 # Installation instructions
+                                    
 The snap command ships with Ubuntu, from version 16.04 and later. If you do not have it installed, follow the instructions on snapcraft to install snapd.
 Snaps are delivered via "channels"; for Node.js, the channel names are the major-version number of Node.js. So select a supported Node.js version and install with:
 sudo snap install node --classic --channel=8
  
 Substituting 8 for the major version you want to install. Both LTS and Current versions of Node.js are available via snapcraft.
+
 The --classic argument is required here as Node.js needs full access to your system in order to be useful, therefore it needs snap’s "classic confinement". By default, snaps are much more restricted in their ability to access your disk and network and must request special access from you where they need it. Note that on some Linux distributions, the snap confinement mechanisms are not fully supported so --classic may not be necessary or even supported.
 Once installed, the node, npm and yarn commands are available for use and will remain updated for the channel you selected.
 
 # Switching channels
+                                    
 You can use the refresh command to switch to a new channel at any time:
 sudo snap refresh node --channel=10
  
 Once switched, snapd will update Node.js for the new channel you have selected.
 
 # Bleeding-edge Node.js
+                                    
 Users feeling adventurous or interested in testing the latest code from the Node.js core developers can install from the "edge" channel. This has an element of risk: it is a direct pipeline from the upstream Node.js git repository to the snap store every day and previews the ongoing development work and may include breaking changes slated for the next major version of Node.js. This is only recommend for those users who are willing to participate in testing and bug reporting upstream:
+                                    
 sudo snap install node --classic --channel=edge
  
-# Not recommended for production deployments
+# Not recommended for production deployments*
+                                    
 Due to their auto-updating nature, snaps are not necessarily appropriate for the deployment of your Node.js applications to production. NodeSource recommends a stable and integration-tested deployment pipeline for production applications such as the .deb or .rpm distributions outlined above. However, snaps are an excellent way to keep developer machines updated and allow for trivial and convenient switching between Node.js versions.
 
 # Advanced usage
@@ -470,32 +483,53 @@ A: See issue #1181
 
 #  Requested Distributions
 
-We, unfortunately, do not have the resources necessary to support and test the plethora of Linux releases in the wild, so we rely on community members such as yourself to get support on your favorite distributions! This is a list of releases that have been requested by the community. If you are interested in contributing to this project, this would be a great place to start!
+We, unfortunately, do not have the resources necessary to support and test the plethora of Linux releases in the wild, so we rely on community members such as yourself to get support on your favorite distributions! 
+ 
+This is a list of releases that have been requested by the community. If you are interested in contributing to this project, this would be a great place to start!
 
 OpenSUSE - Issue #199
+ 
 Scientific Linux - Issue #251
+ 
 TANGLU Bartholomea - Issue #81
+ 
 Korora - Issue #130
+ 
 FreePBX - Issue #257
+ 
 Deepin - Issue #638
+ 
 PopOS - Issue #924
+ 
 Kylin - Issue #1011
+ 
 MakuluLinux - Issue #1012
+ 
 Alma Linux - Issue #1166
 
 
 #  Authors and Contributors
 
 Chris Lea
+ 
 GitHub/chrislea
+ 
 Twitter/@chrislea
+ 
 Rod Vagg
+ 
 GitHub/rvagg
+ 
 Twitter/@rvagg
+ 
 William Blankenship
+ 
 GitHub/retrohacker
+ 
 Twitter/@retrohack3r
+ 
 Harry Truong
+ 
 GitHub/harrytruong
 
 
@@ -560,24 +594,44 @@ NotABug/jorgesumle
 
 
 Mayank Metha
+ 
 GitHub/mayankmetha
+ 
 Twitter/@mayankmethad
+
 Adrian Estrada
+ 
 GitHub/edsadr
+ 
 Twitter/@edsadr
+ 
 Iván Iguarán
+ 
 GitHub/igsu
+ 
+Justin Mitchell
+ 
 Github/mitchelltesla
 
+Twitter/@mitchell_tesla
+ 
 Contributions are welcomed from anyone wanting to improve this project!
 
 #  License
-This material is Copyright (c) NodeSource and licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE.md file for more details.
+ 
+This material is Copyright (c) NodeSource and licensed under the MIT license.
+ 
+All rights not explicitly granted in the MIT license are reserved. See the included LICENSE.md file for more details.
 
 Supported with love by the NodeSource team
+ 
 This project is not affiliated with Debian, Ubuntu, Red Hat, CentOS or Fedora.
+ 
 Ubuntu is a registered trademark of Canonical Ltd.
+ 
 Debian is a registered trademark owned by Software in the Public Interest, Inc.
+ 
 Red Hat, CentOS and Fedora are trademarks of Red Hat, Inc.
+ 
 CloudLinux is a trademark of Cloud Linux, Inc
 
