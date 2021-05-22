@@ -119,8 +119,8 @@ Ubilinux 4.0 "Dolcetto" (via Debian 9)
 
 #  Installation instructions
 
-Node.js v16.x:
-# Using Ubuntu
+# Node.js v16.x:
+Using Ubuntu
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -128,8 +128,8 @@ sudo apt-get install -y nodejs
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 apt-get install -y nodejs
 
-Node.js v15.x:
-# Using Ubuntu
+# Node.js v15.x:
+Using Ubuntu
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -137,8 +137,8 @@ sudo apt-get install -y nodejs
 curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
 apt-get install -y nodejs
 
-Node.js v14.x:
-# Using Ubuntu
+# Node.js v14.x:
+Using Ubuntu
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -146,8 +146,8 @@ sudo apt-get install -y nodejs
 curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 apt-get install -y nodejs
 
-Node.js v12.x:
-# Using Ubuntu
+# Node.js v12.x:
+Using Ubuntu
 curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -155,8 +155,8 @@ sudo apt-get install -y nodejs
 curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 apt-get install -y nodejs
 
-Node.js LTS (v14.x):
-# Using Ubuntu
+# Node.js LTS (v14.x):
+Using Ubuntu
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -164,8 +164,8 @@ sudo apt-get install -y nodejs
 curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 apt-get install -y nodejs
 
-Node.js Current (v16.x):
-# Using Ubuntu
+# Node.js Current (v16.x):
+Using Ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -186,6 +186,7 @@ These instructions assume sudo is present, however some distributions do not inc
 
 1. Remove the old PPA if it exists
 This step is only required if you previously used Chris Lea's Node.js PPA.
+ 
 # add-apt-repository may not be present on some Ubuntu releases:
 # sudo apt-get install python-software-properties
 sudo add-apt-repository -y -r ppa:chris-lea/node.js
@@ -199,12 +200,12 @@ curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key a
 The key ID is 1655A0AB68576280.
 
 3. Add the desired NodeSource repository
-# Replace with the branch of Node.js or io.js you want to install: node_6.x, node_8.x, etc...
+ Replace with the branch of Node.js or io.js you want to install: node_6.x, node_8.x, etc...
 VERSION=node_8.x
-# The below command will set this correctly, but if lsb_release isn't available, you can set it manually:
-# - For Debian distributions: jessie, sid, etc...
-# - For Ubuntu distributions: xenial, bionic, etc...
-# - For Debian or Ubuntu derived distributions your best option is to use the codename corresponding to the upstream release your distribution is based off. This is an advanced scenario and unsupported if your distribution is not listed as supported per earlier in this README.
+ The below command will set this correctly, but if lsb_release isn't available, you can set it manually:
+ - For Debian distributions: jessie, sid, etc...
+ - For Ubuntu distributions: xenial, bionic, etc...
+ - For Debian or Ubuntu derived distributions your best option is to use the codename corresponding to the upstream release your distribution is based off. This is an advanced scenario and unsupported if your distribution is not listed as supported per earlier in this README.
 DISTRO="$(lsb_release -s -c)"
 echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /etc/apt/sources.list.d/nodesource.list
@@ -212,75 +213,107 @@ echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /e
 4. Update package lists and install Node.js
 sudo apt-get update
 sudo apt-get install nodejs
-Enterprise Linux based distributions
 
+ # Enterprise Linux based distributions
 
 #  Available architectures:
 
 NodeSource will continue to maintain the following architectures and may add additional ones in the future.
+ 
 x86_64 (64-bit)
+ 
 arm64 (ARM 64-bit, ARMv8 and up: aarch64-linux-gnu)
-Supported Red Hat® Enterprise Linux® versions:
+ 
+# Supported Red Hat® Enterprise Linux® versions:
+ 
 RHEL 7 (64-bit)
+ 
 RHEL 8 (64-bit)
-Supported CentOS versions:
+ 
+# Supported CentOS versions:
+ 
 CentOS 7 (64-bit)
+ 
 CentOS 8 (64-bit)
+ 
 CentOS 8 Stream (64-bit)
-Supported AlmaLinux OS versions:
+ 
+#Supported AlmaLinux OS versions:
+ 
 AlmaLinux 8 (64-bit)
-Supported CloudLinux versions:
+ 
+# Supported CloudLinux versions:
+ 
 CloudLinux 6 (32-bit for Node <= 10.x and 64-bit)
-Supported Fedora versions:
+                                    
+# Supported Fedora versions:
+                                    
 Fedora 32 (64-bit)
+                                    
 Fedora 33 (64-bit)
+                                    
 Fedora 34 (64-bit)
-Supported Amazon Linux versions:
+                                    
+# Supported Amazon Linux versions:
+                                    
 Amazon Linux (64-bit)
+                                    
 Amazon Linux 2 (64-bit)
 
 #  Installation instructions
-NOTE: If you are using RHEL 6 or CentOS 6, you might want to read about running Node.js on older distros.
+                                    
+# NOTE: 
+ If you are using RHEL 6 or CentOS 6, you might want to read about running Node.js on older distros.
+                                    
 The Nodesource RPM package signing key is available here: https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL
 
-Run on RHEL, CentOS, CloudLinux, Amazon Linux or Fedora:
-Node.js v16.x
-# As root
+# Run on RHEL, CentOS, CloudLinux, Amazon Linux or Fedora:
+
+# Node.js v16.x
+As root
 curl -fsSL https://rpm.nodesource.com/setup_16.x | bash -
 
 # No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
-Node.js v15.x
-# As root
+
+# Node.js v15.x
+As root
 curl -fsSL https://rpm.nodesource.com/setup_15.x | bash -
 
-# No root privileges
+No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_15.x | sudo bash -
-Node.js v14.x
-# As root
+
+# Node.js v14.x
+ As root
 curl -fsSL https://rpm.nodesource.com/setup_14.x | bash -
 
-# No root privileges
+No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_14.x | sudo bash -
+                                    
 Node.js v12.x
 # As root
 curl -fsSL https://rpm.nodesource.com/setup_12.x | bash -
 
-# No root privileges
+No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_12.x | sudo bash -
-Node.js LTS (14.x)
-# As root
+                                    
+# Node.js LTS (14.x)
+As root
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
 
-# No root privileges
+No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | sudo bash -
-Node.js Current (16.x)
-# As root
+                                    
+# Node.js Current (16.x)
+As root
 curl -fsSL https://rpm.nodesource.com/setup_current.x | bash -
 
-# No root privileges
+No root privileges
 curl -fsSL https://rpm.nodesource.com/setup_current.x | sudo bash -
-Optional: install build tools
+                                    
+                                    
+# Optional: install build tools
+                                    
 To compile and install native addons from npm you may also need to install build tools:
 yum install gcc-c++ make
 # or: yum groupinstall 'Development Tools'
