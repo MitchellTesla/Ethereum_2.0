@@ -166,7 +166,7 @@ Astra Linux CE 2.12 "Orel" (via Debian 9)
 Ubilinux 4.0 "Dolcetto" (via Debian 9)
 
 
-#  Installation instructions
+#  Installation instructions *
 
 # Node.js v16.x:
 
