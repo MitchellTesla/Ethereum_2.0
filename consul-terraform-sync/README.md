@@ -74,3 +74,7 @@ Usage of consul-terraform-sync:
 ## Configuration
 
 [Documentation to configure Sync](https://consul.io/docs/nia/configuration)
+
+# Build-status (remote) ' in progress '
+
+Network infrastructure and (remote) build in development...
