@@ -89,7 +89,7 @@ func cacheKey(req *http.Request) (string, error) {
 	fmt.Fprintf(h, "%s:", req.Method)
 	fmt.Fprintf(h, "%s:", req.URL.String())
 	fmt.Fprintf(h, "%s:", req.Header.Get("Accept"))
-	fmt.Fprintf(h, "%s:", req.Header.Get("Authorization"))
+	
 
 	if req.Body != nil {
 		var bodyCopy io.ReadCloser
