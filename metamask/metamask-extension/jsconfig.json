@@ -1,0 +1,14 @@
+{
+  "exclude": [
+    "*.log",
+    "builds",
+    "coverage",
+    "dist",
+    "docs",
+    "lavamoat",
+    "node:console",
+    "node_modules",
+    "patches",
+    "test-artifacts"
+  ]
+}
