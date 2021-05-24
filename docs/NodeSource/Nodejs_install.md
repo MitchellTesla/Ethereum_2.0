@@ -40,131 +40,134 @@ Pull requests are encouraged if you have changes you believe would improve the s
 Available architectures:
 NodeSource will continue to maintain the following architectures and may add additional ones in the future.
 
-amd64 (64-bit)
+- amd64 (64-bit)
 
-armhf (ARM 32-bit hard-float, ARMv7 and up: arm-linux-gnueabihf)
+- armhf (ARM 32-bit hard-float, ARMv7 and up: arm-linux-gnueabihf)
 
-arm64 (ARM 64-bit, ARMv8 and up: aarch64-linux-gnu)
+- arm64 (ARM 64-bit, ARMv8 and up: aarch64-linux-gnu)
 
 # Supported Ubuntu versions:
 
 NodeSource will maintain Ubuntu distributions in active support by Canonical, including LTS and the intermediate releases.
 
-Ubuntu 16.04 LTS (Xenial Xerus)
+- Ubuntu 16.04 LTS (Xenial Xerus)
 
-Ubuntu 18.04 LTS (Bionic Beaver)
+- Ubuntu 18.04 LTS (Bionic Beaver)
 
-Ubuntu 18.10 (Cosmic Cuttlefish)
+- Ubuntu 18.10 (Cosmic Cuttlefish)
 
-Ubuntu 19.04 (Disco Dingo)
+- Ubuntu 19.04 (Disco Dingo)
 
-Ubuntu 19.10 (Eoan Ermine)
+- Ubuntu 19.10 (Eoan Ermine)
 
-Ubuntu 20.04 LTS (Focal Fossa)
+- Ubuntu 20.04 LTS (Focal Fossa)
 
-Ubuntu 20.10 (Groovy Gorilla)
+- Ubuntu 20.10 (Groovy Gorilla)
 
-Ubuntu 21.04 (Hirsute Hippo)
+- Ubuntu 21.04 (Hirsute Hippo)
 
 # Supported Debian versions:
 NodeSource will maintain support for stable, testing and unstable releases of Debian, due to the long release cycle a considerable number of users are running unstable and testing.
 
-Debian 9 / oldstable (Stretch)
+- Debian 9 / oldstable (Stretch)
 
-Debian 10 / stable (Buster)
+- Debian 10 / stable (Buster)
 
-Debian unstable (Sid)
+- Debian unstable (Sid)
 
-Debian testing (Bullseye)
+- Debian testing (Bullseye)
 
 # Supported Linux Mint versions:
-Linux Mint 18 "Sarah" (via Ubuntu 16.04 LTS)
 
-Linux Mint 18.1 "Serena" (via Ubuntu 16.04 LTS)
+- Linux Mint 18 "Sarah" (via Ubuntu 16.04 LTS)
 
-Linux Mint 18.2 "Sonya" (via Ubuntu 16.04 LTS)
+- Linux Mint 18.1 "Serena" (via Ubuntu 16.04 LTS)
 
-Linux Mint 18.3 "Sylvia" (via Ubuntu 16.04 LTS)
+- Linux Mint 18.2 "Sonya" (via Ubuntu 16.04 LTS)
 
-Linux Mint Debian Edition (LMDE) 2 "Betsy" (via Debian 8)
+- Linux Mint 18.3 "Sylvia" (via Ubuntu 16.04 LTS)
 
-Linux Mint 19 "Tara" (via Ubuntu 18.04 LTS)
+- Linux Mint Debian Edition (LMDE) 2 "Betsy" (via Debian 8)
 
-Linux Mint 19.1 "Tessa" (via Ubuntu 18.04 LTS)
+- Linux Mint 19 "Tara" (via Ubuntu 18.04 LTS)
 
-Linux Mint 19.2 "Tina" (via Ubuntu 18.04 LTS)
+- Linux Mint 19.1 "Tessa" (via Ubuntu 18.04 LTS)
 
-Linux Mint 19.3 "Tricia" (via Ubuntu 18.04 LTS)
+- Linux Mint 19.2 "Tina" (via Ubuntu 18.04 LTS)
 
-Linux Mint 20 "Ulyana" (via Ubuntu 20.04 LTS)
+- Linux Mint 19.3 "Tricia" (via Ubuntu 18.04 LTS)
 
-Linux Mint 20.1 "Ulyssa" (via Ubuntu 20.04 LTS)
+- Linux Mint 20 "Ulyana" (via Ubuntu 20.04 LTS)
 
-Linux Mint Debian Edition (LMDE) 3 "Cindy" (via Debian 9)
+- Linux Mint 20.1 "Ulyssa" (via Ubuntu 20.04 LTS)
 
-Linux Mint Debian Edition (LMDE) 4 "Debbie" (via Debian 10)
+- Linux Mint Debian Edition (LMDE) 3 "Cindy" (via Debian 9)
+
+- Linux Mint Debian Edition (LMDE) 4 "Debbie" (via Debian 10)
 
 # Supported Devuan versions:
 
-Ascii / stable (via Debian 9)
+- Ascii / stable (via Debian 9)
 
-Beowulf / testing (via Debian 10)
+- Beowulf / testing (via Debian 10)
 
-Ceres / unstable (via Debian unstable)
+- Ceres / unstable (via Debian unstable)
 
 # Supported elementary OS versions:
 
-elementary OS 0.4 Loki (via Ubuntu 16.04 LTS)
+- elementary OS 0.4 Loki (via Ubuntu 16.04 LTS)
 
-elementary OS 5 Juno (via Ubuntu 18.04 LTS)
+- elementary OS 5 Juno (via Ubuntu 18.04 LTS)
 
-elementary OS 5.1 Hera (via Ubuntu 18.04 LTS)
+- elementary OS 5.1 Hera (via Ubuntu 18.04 LTS)
 
-elementary OS 6 Odin (via Ubuntu 20.04 LTS)
+- elementary OS 6 Odin (via Ubuntu 20.04 LTS)
 
 
 # Supported Trisquel versions:
-Trisquel 8 "Flidas" (via Ubuntu 16.04 LTS)
 
-Trisquel 9 "Etiona" (via Ubuntu 18.04 LTS)
+- Trisquel 8 "Flidas" (via Ubuntu 16.04 LTS)
+
+- Trisquel 9 "Etiona" (via Ubuntu 18.04 LTS)
 
 # Supported BOSS versions:
 
-BOSS 7.0 "Drishti" (via Debian 9)
+- BOSS 7.0 "Drishti" (via Debian 9)
 
-BOSS 8.0 "Unnati" (via Debian 10)
+- BOSS 8.0 "Unnati" (via Debian 10)
 
 # Supported BunsenLabs versions:
 
-Helium (via Debian 9)
-Lithium (via Debian 10)
+- Helium (via Debian 9)
+
+- Lithium (via Debian 10)
 
 
 # Supported MX Linux versions:
 
-MX-17 Horizon (via Debian 9)
+- MX-17 Horizon (via Debian 9)
 
-MX-18 Continuum (via Debian 9)
+- MX-18 Continuum (via Debian 9)
 
-MX-19 Patito Feo (via Debian 10)
+- MX-19 Patito Feo (via Debian 10)
 
 # Supported Sparky Linux versions:
 
-Sparky 4.x "Tyche" (via Debian 9)
+- Sparky 4.x "Tyche" (via Debian 9)
 
-Sparky 5.x "Nibiru" (via Debian 10)
+- Sparky 5.x "Nibiru" (via Debian 10)
 
 # Supported PureOS Linux versions:
 
-PureOS 9.0 "Amber" (via Debian 10)
+- PureOS 9.0 "Amber" (via Debian 10)
 
 # Supported Astra Linux CE versions:
 
-Astra Linux CE 2.12 "Orel" (via Debian 9)
+- Astra Linux CE 2.12 "Orel" (via Debian 9)
 
 # Supported Ubilinux versions:
 
-Ubilinux 4.0 "Dolcetto" (via Debian 9)
+- Ubilinux 4.0 "Dolcetto" (via Debian 9)
 
 
 #  Installation instructions * (terminal)
@@ -449,6 +452,7 @@ Once installed, the node, npm and yarn commands are available for use and will r
 # Switching channels
                                     
 You can use the refresh command to switch to a new channel at any time:
+                                    
 sudo snap refresh node --channel=10
  
 Once switched, snapd will update Node.js for the new channel you have selected.
