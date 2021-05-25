@@ -1,6 +1,5 @@
 # Ξthereum 2.0 Virtual-Machine (WIP) alpha
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
-[![njsscan sarif](https://github.com/MitchellTesla/Ethereum_2.0/actions/workflows/njsscan-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum_2.0/actions/workflows/njsscan-analysis.yml)
 
 <p align="center">
   <img src="MTeslaEthereumlogo.png" alt="demo" />
