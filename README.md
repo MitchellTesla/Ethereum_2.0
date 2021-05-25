@@ -10,7 +10,9 @@
 
 Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. 
 
-The platform allows developers to build and operate decentralized applications that users can interact with.  Decentralized finance (DeFi) applications provide a broad array of financial services without the need for typical financial intermediaries, such as brokerages, exchanges, or banks, allowing cryptocurrency users to borrow against their holdings or lend them out for interest. Ethereum also allows for the creation and exchange of NFTs, which are non-interchangeable tokens connected to digital works of art or other real-world items and sold as unique digital property. Additionally, many other cryptocurrencies operate as ERC-20 tokens on top of the Ethereum blockchain and have utilized the platform for initial coin offerings.
+The platform allows developers to build and operate decentralized applications that users can interact with.  
+
+Decentralized finance (DeFi) applications provide a broad array of financial services without the need for typical financial intermediaries, such as brokerages, exchanges, or banks, allowing cryptocurrency users to borrow against their holdings or lend them out for interest. Ethereum also allows for the creation and exchange of NFTs, which are non-interchangeable tokens connected to digital works of art or other real-world items and sold as unique digital property. Additionally, many other cryptocurrencies operate as ERC-20 tokens on top of the Ethereum blockchain and have utilized the platform for initial coin offerings.
 
 In 2016, a hacker exploited a flaw in a third-party project called The DAO and stole $50 million of Ether. As a result, the Ethereum community voted to hard fork the blockchain to reverse the theft and Ethereum Classic (ETC) continued as the original chain.
 
