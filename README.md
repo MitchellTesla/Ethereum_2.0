@@ -14,7 +14,7 @@ The platform allows developers to build and operate decentralized applications t
 
 Decentralized finance (DeFi) applications provide a broad array of financial services without the need for typical financial intermediaries, such as brokerages, exchanges, or banks, allowing cryptocurrency users to borrow against their holdings or lend them out for interest. Ethereum also allows for the creation and exchange of NFTs, which are non-interchangeable tokens connected to digital works of art or other real-world items and sold as unique digital property. Additionally, many other cryptocurrencies operate as ERC-20 tokens on top of the Ethereum blockchain and have utilized the platform for initial coin offerings.
 
-In 2016, a hacker exploited a flaw in a third-party project called The DAO and stole $50 million of Ether. Starting what was known as "The DAO Wars" As a result, the Ethereum community voted to hard fork the blockchain to reverse the theft, while Ethereum Classic (ETC) would continue on as the original chain.
+In 2016, a hacker exploited a flaw in a third-party project called The DAO and stole $50 million of Ether.  Which marked the beginning of what was known as "The DAO Wars" As a result, the Ethereum community voted to hard fork the blockchain to reverse the theft, while Ethereum Classic (ETC) would continue on as the original chain.
 
 # Reference
 DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
