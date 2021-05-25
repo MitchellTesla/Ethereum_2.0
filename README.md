@@ -9,7 +9,7 @@
 Ethereum is a permissionless, non-hierarchical network of computers (nodes) which build and come to consensus on an ever-growing series of "blocks", or batches of transactions, known as the blockchain. Reference: DevLab3 repo for more libraries of Solidity smart-contracts and reference documentation.
 
 # Check 'Projects' for more information on the Ξthereum 2.0 
-Notice: (WIP) This repository is under construction for ETH2.0, updates frequently*, and may have bugs or issues during construction. 
+Notice: (WIP) This repository is under construction for ETH2.0, updates frequently.* May have bugs or issues during construction. 
   
   
 # MIT License
