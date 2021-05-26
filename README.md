@@ -30,6 +30,8 @@ In 2016, a hacker exploited a flaw in a third-party project called The DAO and s
 
 As a result, the Ethereum community voted to hard fork the blockchain to reverse the theft, while Ethereum Classic (ETC) would continue on as the original chain.
 
+![Demo](https://user-images.githubusercontent.com/44038056/48001064-5d377d00-e0ff-11e8-994f-36d165f9124e.gif)
+
 # Reference
  See Projects or DevLab3 repositories for more libraries of Solidity smart-contracts and reference documentation. 
  
