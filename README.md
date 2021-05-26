@@ -1,7 +1,7 @@
 # Ξthereum 2.0 Virtual-Machine 
 [![GitHub Stars](https://img.shields.io/github/stars/mitchelltesla/Ethereum_2.0.svg)](https://github.com/mitchelltesla/Ethereum_2.0/stargazers)
-[![Travis](https://travis-ci.org/mitchelltesla/Ethereum_2.0.svg?branch=develop)](https://travis-ci.org/mitchelltesla/Ethereum_2.0)
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
+[![Travis](https://travis-ci.org/mitchelltesla/Ethereum_2.0.svg?branch=develop)](https://travis-ci.org/mitchelltesla/Ethereum_2.0)
 [![GitHub Issues](https://img.shields.io/github/issues/mitchelltesla/Ethereum_2.0.svg)](https://github.com/mitchelltesla/Ethereum_2.0/issues)
 [![Downloads](https://img.shields.io/npm/dw/web3x-evm-es.svg)](https://www.npmjs.com/package/web3x-evm-es)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mitchelltesla/Ethereum_2.0/blob/develop/Ethereum_2.0-codegen/LICENSE)
