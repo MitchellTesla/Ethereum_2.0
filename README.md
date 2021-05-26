@@ -1,6 +1,10 @@
 # Ξthereum 2.0 Virtual-Machine 
 [![CodeQL](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MitchellTesla/Ethereum2.0/actions/workflows/codeql-analysis.yml)
 
+[![GitHub Stars](https://img.shields.io/github/stars/mitchelltesla/Ethereum_2.0.svg)](https://github.com/mitchelltesla/Ethereum_2.0/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/mitchelltesla/Ethereum_2.0.svg)](https://github.com/mitchelltesla/Ethereum_2.0/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mitchelltesla/Ethereum_2.0/blob/develop/Ethereum_2.0-codegen/LICENSE)
+
 Ethereum has started implementing a series of upgrades called Ethereum 2.0, which includes a transition to proof of stake and aims to increase transaction throughput using sharding.
 
 <p align="center">
