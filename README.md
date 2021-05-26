@@ -5,10 +5,6 @@
 [![GitHub Issues](https://img.shields.io/github/issues/mitchelltesla/Ethereum_2.0.svg)](https://github.com/mitchelltesla/Ethereum_2.0/issues)
 [![Downloads](https://img.shields.io/npm/dw/web3x-evm-es.svg)](https://www.npmjs.com/package/web3x-evm-es)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mitchelltesla/Ethereum_2.0/blob/develop/Ethereum_2.0-codegen/LICENSE)
-
-<p align="left">
-  <a href="https://npmcharts.com/compare/ethbinary?minimal=true"><img src="https://img.shields.io/npm/dm/ethbinary.svg" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/ethbinary"><img src="https://img.shields.io/npm/v/ethbinary.svg" alt="Version"></a>ethereum-binaries*
   
 Ethereum has started implementing a series of upgrades called Ethereum 2.0, which includes a transition to proof of stake and aims to increase transaction throughput using sharding.
 <p align="center">
@@ -32,9 +28,29 @@ As a result, the Ethereum community voted to hard fork the blockchain to reverse
 
 ![Demo](https://user-images.githubusercontent.com/44038056/48001064-5d377d00-e0ff-11e8-994f-36d165f9124e.gif)
 
-# Reference
+# References
  See Projects or DevLab3 repositories for more libraries of Solidity smart-contracts and reference documentation. 
  
+ # Ethereum-binaries
+ <p align="center">
+  <a href="https://circleci.com/gh/ethereum/ethereum-binaries"><img src="https://img.shields.io/circleci/project/github/ethereum/ethereum-binaries/master.svg" alt="Build Status"></a>
+  <a href="https://npmcharts.com/compare/ethbinary?minimal=true"><img src="https://img.shields.io/npm/dm/ethbinary.svg" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/ethbinary"><img src="https://img.shields.io/npm/v/ethbinary.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/ethbinary"><img src="https://img.shields.io/npm/l/ethbinary.svg" alt="License"></a>
+  <br>
+</p>
+
+Fast, easy and secure Ethereum binary management.
+
+- [X] 🎁 **Package Extraction**
+- [x] 🔐 **Binary Verification**
+- [x] ♨️ **Runtime Detection** 🐍
+- [X] 🐳 **Docker Support** 
+- [X] ⏰ **Lifecycle Events [ IPC_READY | SYNCED | STOPPED ... ]** 
+- [x] ☁️ **Auto Update**
+- [x] ⚡ **Caching**
+- [x] 🐙 **Version Management**
+- [x] 🌈 **Multi Client Support**
     
 # MIT License
 
