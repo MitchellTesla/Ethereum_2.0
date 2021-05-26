@@ -28,9 +28,6 @@ As a result, the Ethereum community voted to hard fork the blockchain to reverse
 
 ![Demo](https://user-images.githubusercontent.com/44038056/48001064-5d377d00-e0ff-11e8-994f-36d165f9124e.gif)
 
-# References
- See Projects or DevLab3 repositories for more libraries of Solidity smart-contracts and reference documentation. 
- 
  # Ethereum-binaries
  <p align="center">
   <a href="https://circleci.com/gh/ethereum/ethereum-binaries"><img src="https://img.shields.io/circleci/project/github/ethereum/ethereum-binaries/master.svg" alt="Build Status"></a>
@@ -52,6 +49,10 @@ Fast, easy and secure Ethereum binary management.
 - [x] 🐙 **Version Management**
 - [x] 🌈 **Multi Client Support**
     
+    
+# References
+ See Projects or DevLab3 repositories for more libraries of Solidity smart-contracts and reference documentation. 
+ 
 # MIT License
 
 Copyright (c) 2021 Justin Mitchell
