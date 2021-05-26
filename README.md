@@ -6,8 +6,7 @@
 [![Downloads](https://img.shields.io/npm/dw/web3x-evm-es.svg)](https://www.npmjs.com/package/web3x-evm-es)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mitchelltesla/Ethereum_2.0/blob/develop/Ethereum_2.0-codegen/LICENSE)
 
-<p align="center">
-  <a href="https://circleci.com/gh/ethereum/ethereum-binaries"><img src="https://img.shields.io/circleci/project/github/ethereum/ethereum-binaries/master.svg" alt="Build Status"></a>
+<p align="left">
   <a href="https://npmcharts.com/compare/ethbinary?minimal=true"><img src="https://img.shields.io/npm/dm/ethbinary.svg" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/ethbinary"><img src="https://img.shields.io/npm/v/ethbinary.svg" alt="Version"></a>
   
