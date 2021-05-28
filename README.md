@@ -28,6 +28,17 @@ As a result, the Ethereum community voted to hard fork the blockchain to reverse
 
 ![Demo](https://user-images.githubusercontent.com/44038056/48001064-5d377d00-e0ff-11e8-994f-36d165f9124e.gif)
 
+# Ratatool
+========
+
+[![CircleCI](https://circleci.com/gh/spotify/ratatool/tree/master.svg?style=svg)](https://circleci.com/gh/spotify/ratatool/tree/master)
+[![codecov.io](https://codecov.io/github/spotify/ratatool/coverage.svg?branch=master)](https://codecov.io/github/spotify/ratatool?branch=master)
+[![GitHub license](https://img.shields.io/github/license/spotify/ratatool.svg)](./LICENSE)
+[![Maven Central](https://img.shields.io/maven-central/v/com.spotify/ratatool-common_2.12.svg)](https://maven-badges.herokuapp.com/maven-central/com.spotify/ratatool-common_2.12)
+[![Scala Steward badge](https://img.shields.io/badge/Scala_Steward-helping-blue.svg?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAMAAAARSr4IAAAAVFBMVEUAAACHjojlOy5NWlrKzcYRKjGFjIbp293YycuLa3pYY2LSqql4f3pCUFTgSjNodYRmcXUsPD/NTTbjRS+2jomhgnzNc223cGvZS0HaSD0XLjbaSjElhIr+AAAAAXRSTlMAQObYZgAAAHlJREFUCNdNyosOwyAIhWHAQS1Vt7a77/3fcxxdmv0xwmckutAR1nkm4ggbyEcg/wWmlGLDAA3oL50xi6fk5ffZ3E2E3QfZDCcCN2YtbEWZt+Drc6u6rlqv7Uk0LdKqqr5rk2UCRXOk0vmQKGfc94nOJyQjouF9H/wCc9gECEYfONoAAAAASUVORK5CYII=)](https://scala-steward.org)
+
+A tool for random data sampling and generation
+
  # Ethereum-binaries
  <p align="center">
   <a href="https://circleci.com/gh/ethereum/ethereum-binaries"><img src="https://img.shields.io/circleci/project/github/ethereum/ethereum-binaries/master.svg" alt="Build Status"></a>
