@@ -1,0 +1,7 @@
+*.log
+*.ignore
+dest
+dest-es
+node_modules
+coverage
+.coveralls.yml
