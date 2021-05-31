@@ -20,6 +20,15 @@ import (
 	"github.com/go-kit/kit/metrics/teststat"
 )
 
+// Counter is an in-memory implementation of a Counter.
+type Counter struct {
+	bits uint64 // bits has to be the first word in order to be 64-aligned on 32-bit
+	Name string
+	lvs  lv.LabelValues
+	bits uint64
+}
+
+// NewCounter returns a new, usable Counter.
 func TestCounter(t *testing.T) {
 	name := "my_counter"
 	counter := generic.NewCounter(name).With("label", "counter").(*generic.Counter)
@@ -70,7 +79,15 @@ func TestHistogram(t *testing.T) {
 		t.Fatal(err)
 	}
 }
+// Gauge is an in-memory implementation of a Gauge.
+type Gauge struct {
+	bits uint64 // bits has to be the first word in order to be 64-aligned on 32-bit
+	Name string
+	lvs  lv.LabelValues
+	bits uint64
+}
 
+// NewGauge returns a new, usable Gauge.
 func TestIssue424(t *testing.T) {
 	var (
 		histogram   = generic.NewHistogram("dont_panic", 50)
