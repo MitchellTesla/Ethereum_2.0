@@ -1,6 +1,6 @@
 # Copybara
 
-*A tool for transforming and moving code between repositories.*
+*A tool for transforming and moving code between repositories.*  currently in construction* (wip)
 
 Copybara is a tool used internally at Google. It transforms and moves code between repositories.
 
