@@ -9,7 +9,7 @@ jobs:
   build-and-upload-to-s3:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@alpha-zero
 
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
