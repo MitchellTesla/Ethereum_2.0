@@ -1,5 +1,6 @@
-
-![Banner](.github/banner.png)
+<p align="center">
+  <img src="banner.png" alt="demo" />
+</p>
 
 ## Polygon SDK
 
