@@ -5,7 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/mitchelltesla/Ethereum_2.0.svg)](https://github.com/mitchelltesla/Ethereum_2.0/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mitchelltesla/Ethereum_2.0/blob/develop/Ethereum_2.0-codegen/LICENSE)
   
-Ethereum has started implementing a series of upgrades called Ethereum 2.0, which includes a transition to proof of stake and aims to increase transaction throughput using sharding.
+Ethereum has started implementing a series of upgrades called Ethereum 2.0, which includes a transition from proof of work to proof of stake, and aims to increase transaction throughput using sharding.
 <p align="center">
   <img src="MTeslaEthereumlogo.png" alt="demo" />
 </p>
