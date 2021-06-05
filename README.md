@@ -95,4 +95,4 @@ SOFTWARE.
 
 
 #  Notice: 
-(WIP) This repository is under construction for ETH2.0, updates frequently.* May have bugs or issues during construction.  Reference code status badges.
+(WIP) This repository is under construction for ETH2.0, updates frequently.* May have bugs or issues during construction.  Reference status badges and release.
