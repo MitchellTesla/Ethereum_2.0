@@ -27,6 +27,9 @@ As a result, the Ethereum community voted to hard fork the blockchain to reverse
 
 ![Demo](https://user-images.githubusercontent.com/44038056/48001064-5d377d00-e0ff-11e8-994f-36d165f9124e.gif)
 
+###  Notice: 
+(xWIP) This repository is an experimental build under construction for ETH2.0, which is a mass collab of tools, source codes, and dependancies.** which sometimes updates frequently* It will have bugs and issues during construction, as workflows are manually built, tested, and developed.  We recommend utilizing the original source codes, repositories, and branches if you want to fork or clone instead of this repo.   
+
 # Ratatool
 ========
 
@@ -93,6 +96,4 @@ SOFTWARE.
   <img src="dedsec9isnotsoanon.jpg" alt="demo" />
 </p>
 
-
-#  Notice: 
-(WIP) This repository is under construction for ETH2.0, updates frequently.* May have bugs or issues during construction.  Reference status badges and release tags.
+Reference status badges and release tags for codeql.
