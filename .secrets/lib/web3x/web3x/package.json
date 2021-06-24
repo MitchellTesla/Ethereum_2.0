@@ -75,7 +75,7 @@
     "swarm-js": "^0.1.39",
     "tslib": "^1.9.3",
     "utf8": "^3.0.0",
-    "ws": "^6.1.0"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@types/isomorphic-fetch": "^0.0.35",
