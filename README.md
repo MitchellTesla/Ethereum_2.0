@@ -96,4 +96,4 @@ SOFTWARE.
   <img src="dedsec9isnotsoanon.jpg" alt="demo" />
 </p>
 
-Reference status badges and release tags for codeql.*
+Reference status badges and release tag for codeql.*
