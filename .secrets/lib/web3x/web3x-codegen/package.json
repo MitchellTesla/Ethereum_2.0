@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "fs-extra": "^7.0.1",
-    "got": "^9.3.0",
+    "got": "^11.8.5",
     "typescript": "^3.2.2",
     "web3x": "file:../web3x/dest"
   },
