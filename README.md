@@ -69,8 +69,6 @@ Fast, easy and secure Ethereum binary management.
  
 # MIT License
 
-Copyright (c) 2021 Justin Mitchell
-
 Copyright (c) 2021 dedsec-9
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
