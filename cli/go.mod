@@ -30,11 +30,10 @@ require (
 	github.com/spf13/cobra v1.1.3
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.6.1
-	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
-	golang.org/x/sync v0.0.0-20190423024810-112230192c58
-	golang.org/x/sys v0.0.0-20210330210617-4fbd30eecc44
-	golang.org/x/term v0.0.0-20210422114643-f5beecf764ed
-	golang.org/x/text v0.3.4 // indirect
+	golang.org/x/crypto v0.1.0
+	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
+	golang.org/x/sys v0.1.0
+	golang.org/x/term v0.1.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )
 
