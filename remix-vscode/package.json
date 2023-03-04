@@ -157,7 +157,7 @@
 		"axios": "^0.21.1",
 		"ftp": "^0.3.10",
 		"jsonc-parser": "^0.4.2",
-		"mkdirp": "^0.5.1",
+		"mkdirp": "^0.5.6",
 		"remix-url-resolver": "^0.0.16",
 		"rimraf": "^2.6.2",
 		"solc": "^0.7.0",
