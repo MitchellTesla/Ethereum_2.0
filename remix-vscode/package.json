@@ -154,7 +154,7 @@
 		"@remixproject/plugin-api": "^0.3.13-alpha.1",
 		"@remixproject/plugin-utils": "^0.3.13-alpha.1",
 		"@remixproject/plugin-vscode": "^0.3.13-alpha.1",
-		"axios": "^0.21.1",
+		"axios": "^0.21.2",
 		"ftp": "^0.3.10",
 		"jsonc-parser": "^0.4.2",
 		"mkdirp": "^0.5.1",
